@@ -1,0 +1,467 @@
+{
+    "global": {
+        "app_name": "PSR",
+        "favicon": "/images/"
+    },
+    "general": {
+        "date": "Date",
+        "time": "Heure",
+        "home": "Accueil",
+        "days": [
+            "Dimanche",
+            "Lundi",
+            "Mardi",
+            "Mercredi",
+            "Jeudi",
+            "Vendredi",
+            "Samedi"
+        ],
+        "months": [
+            "Jan",
+            "Fev",
+            "Mar",
+            "Avr",
+            "Mai",
+            "Jui",
+            "Jul",
+            "Aou",
+            "Sep",
+            "Oct",
+            "Nov",
+            "D\u00e9c"
+        ]
+    },
+    "auth": {
+        "footer": {
+            "copyrights": "Copyrights",
+            "all_rights": "Tous droits r\u00e9serv\u00e9s par"
+        },
+        "messages": {
+            "admin": {
+                "not_found": "Informations incorrectes.",
+                "invalid": "Code de v\u00e9rification invalide.",
+                "sent": "Code de v\u00e9rification envoy\u00e9 avec succ\u00e8s."
+            },
+            "user": {
+                "inactive": "Votre compte n'est pas actif. Veuillez appeler l'administrateur.",
+                "unauthorized": "Non autoris\u00e9",
+                "sent": "Lien de r\u00e9initialisation envoy\u00e9 avec succ\u00e8s.",
+                "reset": "Mot de passe r\u00e9initialis\u00e9 avec succ\u00e8s.",
+                "failure": "Echec."
+            }
+        },
+        "pages": {
+            "user": {
+                "login": {
+                    "title": "Bienvenue !",
+                    "sign_in": "Se connecter",
+                    "email_address": "Adresse mail",
+                    "password": "Mot de passe"
+                }
+            },
+            "admin": {
+                "login": {
+                    "sign_in_to": "Se connecter au",
+                    "sign_in": "Se connecter",
+                    "admin_panel": "Panneau de l'administrateur",
+                    "email_address": "Adresse mail",
+                    "password": "Mot de passe",
+                    "sms": "SMS",
+                    "email": "Adresse mail",
+                    "otp_method": "M\u00e9thode OTP"
+                },
+                "verify": {
+                    "enter": "Entrer",
+                    "verification_code": "Code de v\u00e9rification",
+                    "continue": "Continuer",
+                    "didnt_receive_code": "Aucun code re\u00e7u",
+                    "resend": "Renvoyer"
+                }
+            }
+        }
+    },
+    "backend": {
+        "header": {
+            "id": "ID",
+            "sign_out": "Se d\u00e9connecter",
+            "no_message": "Aucun message",
+            "no_notification": "Aucune notification",
+            "logout": "D\u00e9connexion",
+            "close": "Fermer",
+            "sure_logout": "\u00cates-vous s\u00fbr de vouloir vous d\u00e9connecter",
+            "you_have": "Vous avez",
+            "messages": "messages",
+            "unread_message": "message non lu",
+            "unread_notification": "notification non lue",
+            "unread_messages": "messages non lus",
+            "unread_notifications": "notifications non lues",
+            "view_all_messages": "Voir tous les messages",
+            "view_all_notifications": "Voir toutes les notifications"
+        },
+        "footer": {
+            "copyright": "Copyright",
+            "all_rights": "Tous droits r\u00e9serv\u00e9s par"
+        },
+        "sidebar": {
+            "admin": "Administrateur",
+            "user": "Utilisateur",
+            "menu": {
+                "dashboard": {
+                    "title": "Tableau de bord"
+                },
+                "admins": {
+                    "title": "Administrateurs",
+                    "add": "Ajouter un administrateur",
+                    "index": "Liste des administrateurs"
+                },
+                "users": {
+                    "title": "Utilisateurs",
+                    "add": "Ajouter un utilisateur",
+                    "index": "Liste des utilisateurs"
+                },
+                "roles": {
+                    "title": "R\u00f4les",
+                    "add": "Ajouter un r\u00f4le",
+                    "index": "Liste des r\u00f4les"
+                },
+                "features": {
+                    "title": "Fonctionnalit\u00e9s",
+                    "add": "Ajouter une fonctionnalit\u00e9",
+                    "index": "Liste des fonctionnalit\u00e9s"
+                },
+                "cms": {
+                    "title": "CMS",
+                    "global": "Global",
+                    "general": "G\u00e9n\u00e9ral",
+                    "auth": "Authentification",
+                    "backend": "Backend",
+                    "frontend": "Frontend"
+                },
+                "notifications": {
+                    "title": "Notifications"
+                },
+                "settings": {
+                    "title": "Param\u00e8tres",
+                    "cms": "CMS",
+                    "language": "Param\u00e8tres de langue"
+                },
+                "products": {
+                    "title": "Produits",
+                    "add": "Ajouter un produit",
+                    "index": "Liste des produits"
+                },
+                "frequencies": {
+                    "title": "Fréquences",
+                    "add": "Ajouter une fréquence",
+                    "index": "Liste des fréquences"
+                },
+                "ranges": {
+                    "title": "Intervalles",
+                    "add": "Ajouter un intervalle",
+                    "index": "Liste des intervalles"
+                }
+            }
+        },
+        "components": {
+            "form": {
+                "save": "Sauvegarder",
+                "save_add": "Sauvegarder & ajouter",
+                "selected_file": "Fichier s\u00e9lectionn\u00e9",
+                "active": "Actif",
+                "inactive": "Inactif"
+            },
+            "list": {
+                "action": "Action",
+                "all": "Tous",
+                "first": "Premi\u00e8re",
+                "last": "Derni\u00e8re",
+                "loading": "Chargement en cours",
+                "print": "Imprimer",
+                "pdf": "PDF",
+                "csv": "CSV",
+                "excel": "Excel",
+                "search": "Rechercher",
+                "see": "Voir",
+                "show": "Afficher",
+                "sl": "SL",
+                "showing": "Affichant",
+                "from": "sur",
+                "entries": {
+                    "singular": "entr\u00e9e",
+                    "plural": "entr\u00e9es"
+                }
+            }
+        },
+        "messages": {
+            "admins": {
+                "not_found": "Administrateur introuvable.",
+                "created": "Administrateur cr\u00e9\u00e9 avec succ\u00e8s.",
+                "updated": "Administrateur modifi\u00e9 avec succ\u00e8s.",
+                "deleted": "Administrateur supprim\u00e9 avec succ\u00e8s."
+            },
+            "users": {
+                "not_found": "Utilisateur introuvable.",
+                "created": "Utilisateur cr\u00e9\u00e9 avec succ\u00e8s.",
+                "updated": "Utilisateur modifi\u00e9 avec succ\u00e8s.",
+                "deleted": "Utilisateur supprim\u00e9 avec succ\u00e8s."
+            },
+            "roles": {
+                "not_found": "R\u00f4le introuvable.",
+                "created": "R\u00f4le cr\u00e9\u00e9 avec succ\u00e8s.",
+                "updated": "R\u00f4le modifi\u00e9 avec succ\u00e8s.",
+                "deleted": "R\u00f4le supprim\u00e9 avec succ\u00e8s."
+            },
+            "features": {
+                "not_found": "Fonctionnalit\u00e9 introuvable.",
+                "created": "Fonctionnalit\u00e9 cr\u00e9\u00e9e avec succ\u00e8s.",
+                "updated": "Fonctionnalit\u00e9 modifi\u00e9e avec succ\u00e8s.",
+                "deleted": "Fonctionnalit\u00e9 supprim\u00e9e avec succ\u00e8s."
+            },
+            "notifications": {
+                "not_found": "Notification introuvable."
+            },
+            "cms": {
+                "not_found": "Contenu introuvable.",
+                "updated": "Contenu modifi\u00e9 avec succ\u00e8s."
+            },
+            "settings": {
+                "not_found": "Param\u00e8tre introuvable.",
+                "created": "Param\u00e8tre cr\u00e9\u00e9 avec succ\u00e8s.",
+                "updated": "Param\u00e8tre modifi\u00e9 avec succ\u00e8s.",
+                "deleted": "Param\u00e8tre supprim\u00e9 avec succ\u00e8s."
+            },
+            "products": {
+                "not_found": "Produit introuvable.",
+                "created": "Produit cr\u00e9\u00e9 avec succ\u00e8s.",
+                "updated": "Produit modifi\u00e9 avec succ\u00e8s.",
+                "deleted": "Produit supprim\u00e9 avec succ\u00e8s."
+            },
+            "frequencies": {
+                "not_found": "Fréquence introuvable.",
+                "created": "Fréquence cr\u00e9\u00e9e avec succ\u00e8s.",
+                "updated": "Fréquence modifi\u00e9e avec succ\u00e8s.",
+                "deleted": "Fréquence supprim\u00e9e avec succ\u00e8s."
+            },
+            "ranges": {
+                "not_found": "Intervalle introuvable.",
+                "created": "Intervalle cr\u00e9\u00e9 avec succ\u00e8s.",
+                "updated": "Intervalle modifi\u00e9 avec succ\u00e8s.",
+                "deleted": "Intervalle supprim\u00e9 avec succ\u00e8s."
+            }
+        },
+        "pages": {
+            "dashboard": {
+                "admin": {
+                    "title": "Panneau de l'administrateur",
+                    "subtitle": "Tableau de bord",
+                    "blocks": {
+                        "users": "Utilisateurs",
+                        "frequencies": "Fréquences",
+                        "products": "Produits",
+                        "ranges": "Intervalles"
+                    }
+                },
+                "user": {
+                    "title": "Panneau de l'utilisateur",
+                    "subtitle": "Tableau de bord",
+                    "blocks": {
+                        "users": "Utilisateurs",
+                        "frequencies": "Fréquences",
+                        "products": "Produits",
+                        "ranges": "Intervalles"
+                    },
+                    "general_report": {
+                        "title": "General",
+                        "subtitle": "General",
+                        "products": "Produits",
+                        "total_products": "Produits au total"
+                    }
+                }
+            },
+            "cms": {
+                "title": "CMS",
+                "global": "Global",
+                "general": "General",
+                "messages": "Messages",
+                "frontend": "Frontend",
+                "components": "Components",
+                "backend": "Backend",
+                "auth": "Auth",
+                "form": {
+                    "logo": "Logo",
+                    "app_name": "Nom de l'application",
+                    "company_name": "Nom de l'entreprise",
+                    "company_logo": "Logo de l'entreprise"
+                }
+            },
+            "admins": {
+                "title": "Administrateurs",
+                "add": "Ajouter un administrateur",
+                "edit": "Modifier un administrateur",
+                "index": "Liste des administrateurs",
+                "form": {
+                    "name": "Nom de l'administrateur",
+                    "full_name": "Nom complet",
+                    "phone": "Num\u00e9ro de t\u00e9l\u00e9phone",
+                    "password": "Mot de passe",
+                    "password_confirmation": "Confirmation de mot de passe",
+                    "email": "Adresse mail",
+                    "admin_photo": "Photo de l'administrateur",
+                    "photo": "Photo"
+                }
+            },
+            "users": {
+                "title": "Utilisateurs",
+                "add": "Ajouter un utilisateur",
+                "edit": "Modifier un utilisateur",
+                "index": "Liste des utilisateurs",
+                "form": {
+                    "name": "Nom de l'utilisateur",
+                    "full_name": "Nom complet",
+                    "phone": "Num\u00e9ro de t\u00e9l\u00e9phone",
+                    "password": "Mot de passe",
+                    "password_confirmation": "Confirmation de mot de passe",
+                    "email": "Adresse mail",
+                    "role": "R\u00f4le",
+                    "select_role": "S\u00e9lectionner un r\u00f4le",
+                    "user_photo": "Photo de l'utilisateur",
+                    "photo": "Photo"
+                }
+            },
+            "roles": {
+                "title": "R\u00f4les",
+                "add": "Ajouter un r\u00f4le",
+                "edit": "Modifier un r\u00f4le",
+                "index": "Liste des r\u00f4les",
+                "form": {
+                    "name": "Nom",
+                    "description": "Description",
+                    "features": "Fonctionnalit\u00e9s",
+                    "created_at": "Cr\u00e9\u00e9 le",
+                    "create": "Cr\u00e9er",
+                    "update": "Modifier",
+                    "delete": "Supprimer"
+                }
+            },
+            "features": {
+                "title": "Fonctionnalit\u00e9s",
+                "add": "Ajouter une fonctionnalit\u00e9",
+                "edit": "Modifier une fonctionnalit\u00e9",
+                "index": "Liste des fonctionnalit\u00e9s",
+                "form": {
+                    "name": "Nom",
+                    "prefix": "Pr\u00e9fixe",
+                    "created_at": "Cr\u00e9\u00e9e le"
+                }
+            },
+            "notifications": {
+                "title": "Notifications",
+                "show": "D\u00e9tails des notifications",
+                "index": "Liste des notifications",
+                "form": {
+                    "you_have_no_notification": "Vous n'avez pas de notification."
+                }
+            },
+            "settings": {
+                "title": "Param\u00e8tres",
+                "subtitle": "Param\u00e8tres du compte",
+                "language": {
+                    "title": "Param\u00e8tres de langue",
+                    "form": {
+                        "select_language": "S\u00e9lectionner une langue"
+                    }
+                }
+            },
+            "products": {
+                "title": "Produits",
+                "add": "Ajouter un produit",
+                "edit": "Modifier un produit",
+                "index": "Liste des produits",
+                "form": {
+                    "name": "Nom",
+                    "photo": "Photo",
+                    "product_photo": "Photo du produit",
+                    "created_at": "Cr\u00e9\u00e9 le"
+                }
+            },
+            "frequencies": {
+                "title": "Fréquences",
+                "add": "Ajouter une fréquence",
+                "edit": "Modifier une fréquence",
+                "index": "Liste des fréquences",
+                "form": {
+                    "name": "Nom",
+                    "created_at": "Cr\u00e9\u00e9 le"
+                }
+            },
+            "ranges": {
+                "title": "Intervalles",
+                "add": "Ajouter une intervalle",
+                "edit": "Modifier une intervalle",
+                "index": "Liste des intervalles",
+                "form": {
+                    "name": "Nom",
+                    "created_at": "Cr\u00e9\u00e9e le"
+                }
+            }
+        }
+    },
+    "frontend": {
+        "header": {
+            "menu": {
+                "home": "Home",
+                "question_1": "Question 1",
+                "question_2": "Question 2",
+                "question_3": "Question 3",
+                "congrats": "Congratulations"
+            }
+        },
+        "components": {
+            "form": {
+                "continue": "Continue",
+                "submit": "Submit"
+            },
+            "item_block": {
+                "selected": "Selected",
+                "select": "Select one only."
+            }
+        },
+        "messages": {},
+        "pages": {
+            "home": {
+                "description": "This is a survey app.",
+                "welcome": "Welcome to this survey.",
+                "greetings": "We are happy you decided to help us in this survey",
+                "form": {
+                    "select_area": "Select your Area",
+                    "start": "Start survey"
+                }
+            },
+            "question_1": {
+                "title": "Question 1",
+                "description": "This is the first question of the survey.",
+                "page_title": "Which of these items you use daily ?",
+                "page_description": "Select the products you mostly use for your daily needs in the list below?"
+            },
+            "question_2": {
+                "title": "Question 2",
+                "description": "This is the second question of the survey.",
+                "page_title": "How often do you use the selected items ?",
+                "page_description": "For your daily needs, please select level of usage of your previously selected items."
+            },
+            "question_3": {
+                "title": "Question 3",
+                "description": "This is the third question of the survey.",
+                "page_title": "How much can you spend ?",
+                "page_description": "Please kindly tell us how much you are willing spend per piece for each of the listed items."
+            },
+            "congrats": {
+                "title": "Congratulations",
+                "description": "This is the congratulations page of the survey.",
+                "thank_you": "Thank you for your time !",
+                "finished": "The survey is finished. We appreciate your time.",
+                "home": "Homepage"
+            }
+        }
+    }
+}

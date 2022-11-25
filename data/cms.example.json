@@ -1,6 +1,6 @@
 {
     "global": {
-        "app_name": "PSR",
+        "app_name": "Survey App",
         "favicon": "/images/"
     },
     "general": {

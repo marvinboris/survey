@@ -1,6 +1,6 @@
 import { createContext, Dispatch, SetStateAction, useContext } from 'react'
 
-export type ItemsType = { id: string, frequency?: string, range?: string }[]
+export type ItemsType = { id: string, frequency?: string, range?: string, recommend?: string }[]
 
 const ItemsContext = createContext<{ items: ItemsType, setItems: Dispatch<SetStateAction<ItemsType>> }>({ items: [], setItems: () => { } })
 

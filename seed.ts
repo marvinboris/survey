@@ -1,13 +1,14 @@
 import dotenv from 'dotenv'
 import mongoose from "mongoose";
 
-import { Feature, Product, Role, Range, Frequency, User } from './app/models';
+import { Feature, Product, Role, Range, Frequency, User, Recommend } from './app/models';
 
 import featuresSeed from "./app/seeders/features";
 import productsSeed from './app/seeders/products';
 import rolesSeed from "./app/seeders/roles";
 import frequenciesSeed from './app/seeders/frequencies';
 import rangesSeed from './app/seeders/ranges';
+import recommendsSeed from './app/seeders/recommends';
 import usersSeed from "./app/seeders/users";
 
 dotenv.config({ path: './.env.local' })
@@ -30,17 +31,19 @@ const importData = async () => {
     try {
         await Feature.deleteMany()
         await Role.deleteMany()
+        await Frequency.deleteMany()
         await Range.deleteMany()
+        await Recommend.deleteMany()
         await Product.deleteMany()
         await User.deleteMany()
-        await Frequency.deleteMany()
 
         await featuresSeed()
         await rolesSeed()
         await frequenciesSeed()
+        await rangesSeed()
+        await recommendsSeed()
         await productsSeed()
         await usersSeed()
-        await rangesSeed()
 
         console.log("DB seeded")
         process.exit(0)
@@ -54,10 +57,11 @@ const destroyData = async () => {
     try {
         await Feature.deleteMany()
         await Role.deleteMany()
+        await Frequency.deleteMany()
         await Range.deleteMany()
+        await Recommend.deleteMany()
         await Product.deleteMany()
         await User.deleteMany()
-        await Frequency.deleteMany()
 
         console.log("Data destroyed")
         process.exit(0)

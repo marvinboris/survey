@@ -6,7 +6,7 @@ import ItemsContext, { ItemsType } from '../../../app/contexts/items'
 import Toolbar from './toolbar'
 
 interface LayoutProps {
-    menu: 'question_1' | 'question_2' | 'question_3'
+    menu: 'question_1' | 'question_2' | 'question_3' | 'question_4'
     progress: number
     children: ReactNode
 }

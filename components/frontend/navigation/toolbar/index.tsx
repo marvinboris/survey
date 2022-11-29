@@ -6,7 +6,7 @@ import { useContentContext } from '../../../../app/contexts/content'
 import { classNames } from '../../../../app/helpers/utils'
 
 type ToolbarProps = {
-    menu: 'question_1' | 'question_2' | 'question_3',
+    menu: 'question_1' | 'question_2' | 'question_3' | 'question_4'
     progress: number
 }
 
@@ -23,7 +23,7 @@ export default function Toolbar({ menu, progress }: ToolbarProps) {
                         <Link href={progress === 1 ? '/' : `/question-${progress - 1}`} className='bg-primary/10 rounded-full w-11 h-11 flex items-center justify-center'><ArrowLeftIcon className='text-primary w-4' /></Link>
                         <div className="ml-6 rounded-lg text-sm font-medium py-2.5 bg-green text-white px-[13px]">{cms.title}</div>
                         <div className='ml-auto'>
-                            <div className={classNames("w-16 h-16 rotate-45 rounded-full border-[4px] flex items-center justify-center border-t-green border-l-green/10", progress > 1 ? "border-r-green" : "border-r-green/40", progress > 2 ? "border-b-green" : "border-b-green/20")}>
+                            <div className={classNames("w-16 h-16 rotate-45 rounded-full border-[4px] flex items-center justify-center border-t-green", progress > 1 ? "border-r-green" : "border-r-green/40", progress > 2 ? "border-b-green" : "border-b-green/20", progress > 3 ? "border-l-green" : "border-l-green/10")}>
                             <div className='flex items-center -rotate-45'>
                                 <span className='text-[13.14px] font-bold text-green'>{progress}</span><span className='font-medium'>/4</span>
                             </div>

@@ -116,7 +116,7 @@ export default interface ContentType {
             }
         }
         frontend: {
-            header: { menu: { home: string, question_1: string, question_2: string, question_3: string, congrats: string } },
+            header: { menu: { home: string, question_1: string, question_2: string, question_3: string, question_4: string, congrats: string } },
             components: { form: { continue: string, submit: string }, item_block: { selected: string, select: string } },
             messages: {},
             pages: {
@@ -129,6 +129,7 @@ export default interface ContentType {
                 question_1: { title: string, description: string, page_title: string, page_description: string }
                 question_2: { title: string, description: string, page_title: string, page_description: string }
                 question_3: { title: string, description: string, page_title: string, page_description: string }
+                question_4: { title: string, description: string, page_title: string, page_description: string }
                 congrats: {
                     title: string, description: string
                     thank_you: string

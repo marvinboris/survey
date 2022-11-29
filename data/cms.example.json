@@ -413,6 +413,7 @@
                 "question_1": "Question #1/4",
                 "question_2": "Question #2/4",
                 "question_3": "Question #3/4",
+                "question_4": "Question #4/4",
                 "congrats": "Congratulations"
             }
         },
@@ -452,14 +453,20 @@
             "question_3": {
                 "title": "Question #3/4",
                 "description": "This is the third question of the survey.",
-                "page_title": "How much can you spend ?",
+                "page_title": "How much are you willing to spend on the selected items ?",
                 "page_description": "Please kindly tell us how much you are willing spend per piece for each of the listed items."
+            },
+            "question_4": {
+                "title": "Question #4/4",
+                "description": "This is the fourth question of the survey.",
+                "page_title": "To what extend can you recommend these products ?",
+                "page_description": "Almost complete. Please if you should recommend the selected product, how will you grade them ?"
             },
             "congrats": {
                 "title": "Congratulations",
                 "description": "This is the congratulations page of the survey.",
                 "thank_you": "Thank you for your time !",
-                "finished": "The survey is finished. We appreciate your time.",
+                "finished": "The survey is finished. We appreciate your time. Thank you for making it up to the end.",
                 "home": "Homepage"
             }
         }

@@ -19,16 +19,16 @@ export default function Home() {
   }, [items.length, setItems])
   
 
-  return <div className='min-h-screen flex flex-col items-center justify-center text-center'>
+  return <div className='min-h-screen flex flex-col items-center justify-center text-center px-8'>
     <Head link='/congrats' title={`${cms.title} | ${app_name}`} description={cms.description} />
 
-    <div className='mb-[29.5px]'>
+    <div className='mb-[61px] md:mb-[29.5px]'>
       <FaceSmileIcon className='text-green w-20' />
     </div>
 
-    <h1 className="text-green text-[60px] mb-[17px] font-bold">{cms.thank_you}</h1>
+    <h1 className="text-green text-[45px] md:text-[60px] mb-[38.5px] md:mb-[17px] font-bold">{cms.thank_you}</h1>
 
-    <p className='mb-[110px] text-xl'>{cms.finished}</p>
+    <p className='mb-[151px] md:mb-[110px] text-xl'>{cms.finished}</p>
 
     <p>
       <Link href='/'>

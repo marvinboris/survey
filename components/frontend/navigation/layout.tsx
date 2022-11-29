@@ -1,7 +1,6 @@
 import NextHead from 'next/head'
 import { ReactNode, useState } from 'react'
 
-import { useContentContext } from '../../../app/contexts/content'
 import ItemsContext, { ItemsType } from '../../../app/contexts/items'
 
 import Toolbar from './toolbar'
@@ -14,13 +13,10 @@ interface LayoutProps {
 
 export default function Layout({ menu, progress, children }: LayoutProps) {
     const [items, setItems] = useState<ItemsType>([])
-    
-    const { content } = useContentContext()
-    const { cms: { frontend: { pages: { [menu]: cms } } } } = content!
 
     return <ItemsContext.Provider value={{ items, setItems }}>
         <div className='min-h-screen flex flex-col relative bg-secondary-100'>
-            <Toolbar title={cms.page_title} description={cms.page_description} progress={progress} />
+            <Toolbar menu={menu} progress={progress} />
 
             <div className="main-wrapper">
                 {children}

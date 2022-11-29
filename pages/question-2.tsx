@@ -26,16 +26,16 @@ const ItemBlock = ({ id, name, photo, frequencies }: ItemBlockProps) => {
     const { items, setItems } = useItemsContext()
     const { frequency } = items.find(item => item.id === id)!
 
-    return <div className='px-[8.645px] w-1/5'>
-        <div className={classNames('px-4 rounded-[26.4571px] border-[0.88px] bg-white', frequency !== undefined ? "border-green" : "border-red")}>
+    return <div className='md:px-[8.645px] pb-4 md:pb-0 md:w-1/5'>
+        <div className={classNames('px-6 md:px-4 rounded-[28px] md:rounded-[26.4571px] border-[1.45px] md:border-[0.88px] bg-white', frequency !== undefined ? "border-green/50" : "border-red/50")}>
             <div className="py-6 flex items-center">
-                <div className="bg-secondary-100 rounded-[12.3467px] mr-[13.23px] w-[53px] flex-none p-1">
+                <div className="bg-secondary-100 aspect-square rounded-[12.3467px] mr-[21.73px] md:mr-[13.23px] w-[86.9px] md:w-[53px] flex-none p-1">
                     <Image width={200} height={200} src={photo!} alt={name} className="object-contain w-full h-full" />
                 </div>
 
-                <div className='space-y-[5.81px]'>
-                    <div className="font-semibold text-sm">{name}</div>
-                    <div className="text-[10.58px]">{frequency !== undefined ? <span>{item_block.selected} <CheckCircleIcon className='inline-block w-3 text-green' /></span> : <span className='text-red'>{item_block.select}</span>}</div>
+                <div className='space-y-[9.41px] md:space-y-[5.81px]'>
+                    <div className="font-semibold text-[22.99px] md:text-sm">{name}</div>
+                    <div className="text-[17.38px] md:text-[10.58px]">{frequency !== undefined ? <span>{item_block.selected} <CheckCircleIcon className='inline-block w-5 md:w-3 text-green' /></span> : <span className='text-red'>{item_block.select}</span>}</div>
                 </div>
             </div>
 
@@ -44,14 +44,14 @@ const ItemBlock = ({ id, name, photo, frequencies }: ItemBlockProps) => {
                 <div className='h-full inline-block w-1/2 bg-gradient-to-r from-secondary-200 to-transparent' />
             </div>
 
-            <div className="py-8 space-y-[6.17px]">
+            <div className="py-8 space-y-[10.11px] md:space-y-[6.17px]">
                 {frequencies.map(el => <div key={`item-block-${id}-${el.id}`} onClick={() => setItems(items => {
                     const itemsCp = [...items]
                     const itemIdx = itemsCp.findIndex(item => item.id === id)
                     itemsCp[itemIdx].frequency = el.id
 
                     return itemsCp
-                })} className={classNames(el.id === frequency ? 'text-white bg-green font-medium' : 'bg-secondary-200 cursor-pointer', 'inline-block mr-[6.17px] text-[10.58px] rounded-[5.29px] py-2 px-2.5')}>{el.name}</div>)}
+                })} className={classNames(el.id === frequency ? 'text-white bg-green font-medium' : 'bg-secondary-200 cursor-pointer', 'inline-block mr-[10.11px] md:mr-[6.17px] text-[17.33px] md:text-[10.58px] rounded-[8.67px] md:rounded-[5.29px] py-2 px-2.5')}>{el.name}</div>)}
             </div>
         </div>
     </div>
@@ -74,12 +74,12 @@ const Question2Page: NextPageWithLayout<{ frequencies: FrequencyInterface[] }> =
     return <>
         <Head link='/question-2' title={`${cms.title} | ${app_name}`} description={cms.description} />
         <main>
-            <section className="container space-y-[34px]">
-                <div className='flex justify-center'>
+            <section className="container space-y-[116.29px] md:space-y-[34px] pb-[70.5px] md:pb-0">
+                <div className='md:flex justify-center'>
                     {itemsContent}
                 </div>
 
-                <div className='text-right'>
+                <div className='text-center md:text-right'>
                     <Link href='/question-3'>
                         <Button icon={ArrowRightIcon}><span className='font-medium'>{form.continue}</span></Button>
                     </Link>

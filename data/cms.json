@@ -410,9 +410,9 @@
         "header": {
             "menu": {
                 "home": "Home",
-                "question_1": "Question 1",
-                "question_2": "Question 2",
-                "question_3": "Question 3",
+                "question_1": "Question #1/4",
+                "question_2": "Question #2/4",
+                "question_3": "Question #3/4",
                 "congrats": "Congratulations"
             }
         },
@@ -438,19 +438,19 @@
                 }
             },
             "question_1": {
-                "title": "Question 1",
+                "title": "Question #1/4",
                 "description": "This is the first question of the survey.",
                 "page_title": "Which of these items you use daily ?",
                 "page_description": "Select the products you mostly use for your daily needs in the list below?"
             },
             "question_2": {
-                "title": "Question 2",
+                "title": "Question #2/4",
                 "description": "This is the second question of the survey.",
                 "page_title": "How often do you use the selected items ?",
                 "page_description": "For your daily needs, please select level of usage of your previously selected items."
             },
             "question_3": {
-                "title": "Question 3",
+                "title": "Question #3/4",
                 "description": "This is the third question of the survey.",
                 "page_title": "How much can you spend ?",
                 "page_description": "Please kindly tell us how much you are willing spend per piece for each of the listed items."

@@ -16,15 +16,15 @@ import { NextPageWithLayout } from './_app'
 
 type ItemBlockProps = ProductInterface & { selected: boolean, select: () => void }
 
-const ItemBlock = ({ name, selected, photo, select }: ItemBlockProps) => <div className='px-[8.645px] flex-none w-1/6'>
-    <div onClick={select} className={classNames('cursor-pointer h-[165px] rounded-[20px] text-center p-4', selected ? "relative bg-white shadow-lg" : "bg-secondary-200")}>
-        {selected ? <CheckCircleIcon className='text-green w-5 top-2 right-2 absolute' /> : null}
+const ItemBlock = ({ name, selected, photo, select }: ItemBlockProps) => <div className='px-[7px] md:px-[8.645px] flex-none w-1/2 md:w-1/6'>
+    <div onClick={select} className={classNames('cursor-pointer h-[224.34px] md:h-[165px] rounded-[20px] text-center p-6 md:p-4', selected ? "relative bg-white border border-green/50 md:border-none md:shadow-lg" : "bg-secondary-200")}>
+        {selected ? <CheckCircleIcon className='text-green w-8 md:w-5 top-2 right-2 absolute' /> : null}
 
-        <div className='w-full aspect-[4/3] mb-4'>
+        <div className='w-full aspect-square md:aspect-[4/3] mb-4'>
             <Image width={500} height={500} src={photo!} alt={name} className="object-contain w-full h-full" />
         </div>
 
-        <div className='font-medium text-[13.18px]'>{name}</div>
+        <div className='font-medium text-[17.92px] md:text-[13.18px]'>{name}</div>
     </div>
 </div>
 
@@ -44,12 +44,12 @@ const Question1Page: NextPageWithLayout = () => {
     return <>
         <Head link='/question-1' title={`${menu.question_1} | ${app_name}`} description={cms.description} />
         <main>
-            <section className="container space-y-[34px]">
-                <div className='max-w-[887.29px] mx-auto flex flex-wrap gap-y-[31.03px] justify-center'>
+            <section className="container space-y-[115.32px] md:space-y-[34px] pb-[70.5px]">
+                <div className='max-w-[887.29px] mx-auto flex flex-wrap gap-y-[12.38px] md:gap-y-[31.03px] md:justify-center'>
                     {itemsContent}
                 </div>
 
-                <div className='text-right'>
+                <div className='text-center md:text-right'>
                     <Link href='/question-2'>
                         <Button icon={ArrowRightIcon}><span className='font-medium'>{form.continue}</span></Button>
                     </Link>
